@@ -15,17 +15,47 @@ public class Main {
         l1.mostrarInfo();
 
         /// /////   ////   // /
-        System.out.println("Bienvenido al sistema de la Biblioteca");
+
+        System.out.println(" ");
+        System.out.println("    Bienvenido al sistema de la Biblioteca        ");
         System.out.println("");
         System.out.println(" Ingrese el nombre del Libro: ");
-        String Titulo = teclado.nextLine();
+        String titulo = teclado.nextLine();
         System.out.println("");
         System.out.println(" Ingrese el nombre del autor del libro: ");
-        String Autor = teclado.nextLine();
+        String autor = teclado.nextLine();
         System.out.println(" ");
         System.out.println("Ingrese la cantidad de ejemplares: ");
         int cantDisponibles = teclado.nextInt();
-       
+        teclado.nextLine();
+        Libro libro = new Libro (titulo,autor,cantDisponibles);
+        libro.mostrarInfo();
+        System.out.println(" Ingresa la cantidad de Libros que deseas adquirir prestados: ");
+        int canSolicitada = teclado.nextInt();
+        teclado.nextLine();
+
+        boolean prestado = libro.prestarLibro(canSolicitada);
+        if (prestado) {
+            System.out.println(" Fueron prestados " + canSolicitada + " libros .");
+        } else {
+            System.out.println(" Cantidad solicitada inválida o no hay suficientes copias. ");
+        }
+        System.out.println("");
+        System.out.println("/_/_/_/_/_/_/_/_/_/_/_/");
+        libro.mostrarInfo();
+
+        System.out.println("");
+        System.out.println(" Thanks for using  the system");
+        System.out.println("      +++++         +++++");
+        System.out.println(" ");
+        System.out.println("           !_______!     ");
+
+
+
+
+
+
+
 
 
 

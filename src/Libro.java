@@ -97,6 +97,7 @@ public class Libro {
     }
 
     private void actualizarEstado() {
+
         setEstado(this.cantDisponible > 0 ? "Disponible": "Prestado");
     }
 
