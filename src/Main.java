@@ -8,9 +8,9 @@ public class Main {
         l1.mostrarInfo();
         l1.agregarCopias(12);
         l1.mostrarInfo();
-        System.out.println("se pueden prestar 17 ejemplares");
+        System.out.println(" Se pueden prestar 17 Copias ");
         l1.prestarLibro(15);
-        System.out.println("Fueron prestados 15 ejemplares");
+        System.out.println(" Fueron prestados 15 Copias ");
         l1.mostrarInfo();
 
         /// /////   ////   // /
