@@ -3,8 +3,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
-
-
+        System.out.println(" /// //// //// ////");
         Libro l1 = new Libro(" Psicologia Oscura", "Fabian Goleman",5);
         l1.mostrarInfo();
         l1.agregarCopias(12);
